@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>AluraGeek</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
         <nav class="cabecalho">
             <ul class="cabecalho__menu" >
                 <li><img src="assets/logo-mobile.png" alt="Logo da pagina"></li>
-                <li><a class="cabecalho__menu__botao" href="login.html">Login</a></li>
+                <li><a class="cabecalho__menu__botao" href="#">Login</a></li>
                 <li><img src="assets/lupa.png"></li>
             </ul>
         </nav>
@@ -31,34 +32,21 @@
 
     </header>
 
-    <main>
-        <section class="produtos">
-            <div class="produtos__catalogo">
-                <h2>Star Wars</h2>
-                <a href="#">
-                    <p>Ver tudo</p>
-                    <img src="assets/seta.png">
-                </a>
+    <main>       
+        <form class="login">
+            <legend>Iniciar Sessão</legend>
+            <div class="login__email">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Escreva seu e-mail"/>
             </div>
-
-            <div class="produtos__catalogo">
-                <h2>Consoles</h2>
-                <a href="#">
-                    <p>Ver tudo</p>
-                    <img src="assets/seta.png">
-                </a>
+            <div>
+                <label for="senha"></label>
+                <input type="senha"  id="senha" placeholder="Escreva sua senha"></input>
             </div>
-
-            <div class="produtos__catalogo">   
-                <h2>Diversos</h2>
-                <a href="#">
-                    <p>Ver tudo</p>
-                    <img src="assets/seta.png">
-                </a>
+            <div class="contato__botao">
+                <button type="submit">Entrar</button>
             </div>
-
-        </section>
-
+        </form>
     </main>
 
     <footer>

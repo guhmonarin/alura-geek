@@ -6,6 +6,7 @@
     --cor-secundaria: #2A7AE4;
     --cor-terciaria:#EAF2FD;
     --cor-fundo:#F5F5F5;
+    --cor-texto: #464646;
 }
 
 
@@ -16,4 +17,9 @@
 
 body {
     font-family: var(--fonte-principal);
+}
+
+main {
+    background-color: var(--cor-fundo);
+    height: 100%;
 }

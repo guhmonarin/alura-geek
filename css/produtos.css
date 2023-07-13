@@ -1,0 +1,23 @@
+.produtos h2 {
+    color: var(--cor-texto);
+    font-size: 1.37rem;
+    font-weight: 700;
+}
+
+.produtos__catalogo {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.produtos__catalogo a{
+    text-decoration: none;
+    font-size: 0.87rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+}
+

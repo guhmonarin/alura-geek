@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@500;600;700&display=swap');
+
+:root {
+    --fonte-principal:'Raleway', sans-serif;
+    --cor-principal:#FFFFFF;
+    --cor-secundaria: #2A7AE4;
+    --cor-terciaria:#EAF2FD;
+    --cor-fundo:#F5F5F5;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--fonte-principal);
+}

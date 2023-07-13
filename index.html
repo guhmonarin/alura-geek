@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
     <title>AluraGeek</title>
 </head>
 <body>
@@ -10,26 +13,64 @@
     <header>
         <nav class="cabecalho">
             <ul class="cabecalho__menu" >
-                <li class="cabecalho__menu__item"><img src="assets/logo.png" alt="Logo da pagina"></li>
-                <li class="cabecalho__menu__item"><button class="cabecalho__menu__item login" >Login</button></li>
-                <li class="cabecalho__menu__item"><img src="assets/lupa.png"></li>
+                <li><img src="assets/logo-mobile.png" alt="Logo da pagina"></li>
+                <li><button>Login</button></li>
+                <li><img src="assets/lupa.png"></li>
             </ul>
         </nav>
         <div class="banner">
-            <h2 class="banner__titulo">Dezembro Promocional</h2>
-            <p class="banner__texto">Produtos selecionados com 33% de desconto</p>
-            <button class="banner__botao">Ver Consoles</button>
+            <img class="banner__mobile" src="">
+            <div class="banner__titulo">
+                <h2>Dezembro Promocional</h2>
+                <p>Produtos selecionados com 33% de desconto</p>
+                <button>Ver Consoles</button>
+            </div>
         </div>
-
 
     </header>
 
     <main>
+        <section class="produtos">
+            <h2 class="produtos__titulo">Star Wars</h2>
+            <a class="produtos__link">Ver tudo</a>
+            <h2 class="produtos__titulo">Consoles</h2>
+            <a class="produtos__link">Ver tudo</a>
+            <h2 class="produtos__titulo">Diversos</h2>
+            <a class="produtos__link">Ver tudo</a>
+        </section>
+
+        <section class="contato">
+            <img class="contato__logo" src="assets/logo.png">
+            <nav>
+                <ul>
+                    <li><a>Quem somos nós</a></li>
+                    <li><a>Política de privacidade</a></li>
+                    <li><a>Programa fidelidade</a></li>
+                    <li><a>Nossas lojas</a></li>
+                    <li><a>Quero ser franqueado</a></li>
+                    <li><a>Anuncie aqui</a></li>
+                </ul>
+            </nav>
+            <form>
+                <legend>Fale conosco</legend>
+                <div>
+                    <label for="nome"></label>
+                    <input type="text" id="nome" placeholder="Nome"/>
+                </div>
+                <div>
+                    <label for="msg"></label>
+                    <textarea id="msg" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <div class="contato__botao">
+                    <button type="submit">Enviar mensagem</button>
+                </div>
+            </form>
+        </section>
 
     </main>
 
     <footer>
-
+        <p class="rodape">Desenvolvido por Gustavo Monarin - 2023</p>
     </footer>
     
 </body>

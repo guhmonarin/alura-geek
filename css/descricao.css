@@ -1,0 +1,32 @@
+.detalhes__foto {
+    width: 100%;
+    height: auto;
+}
+
+.detalhes__foto img {
+    width: 100%;
+    height: auto;
+}
+
+.detalhes__descricao {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 16px;
+}
+
+.detalhes__descricao h2 {
+    font-size: 1.37rem;
+    font-weight: 500;
+    color: var(--cor-texto);
+}
+
+.detalhes__descricao__preco {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.detalhes__descricao__descricao {
+    font-size: 0.87rem;
+    font-weight: 400;
+}

@@ -22,8 +22,9 @@
     width: 100%;
     background-image: url('../assets/banner-mobile.png');
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 192px;
+    background-size: cover;
+    background-position: center;
+    height: 190px;
 }
 
 .banner__mobile {

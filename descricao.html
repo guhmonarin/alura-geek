@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/rodape.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/descricao.css">
     <title>AluraGeek</title>
 </head>
 <body>
@@ -21,32 +21,54 @@
                 <li><img src="assets/lupa.png"></li>
             </ul>
         </nav>
-        <div class="banner">
-            <img class="banner__mobile" src="">
-            <div class="banner__titulo">
-                <h2>Dezembro Promocional</h2>
-                <p>Produtos selecionados com 33% de desconto</p>
-                <button>Ver Consoles</button>
-            </div>
-        </div>
-
     </header>
 
-    <main>       
-        <form class="login">
-            <legend>Iniciar Sessão</legend>
-            <div class="login__email">
-                <label for="email"></label>
-                <input type="email" id="email" placeholder="Escreva seu e-mail"/>
+    <main>
+        <section class="detalhes">        
+            <div class="detalhes__foto">
+                <img src="assets/star-wars-1.png">
             </div>
-            <div class="login__senha">
-                <label for="senha"></label>
-                <input type="senha"  id="senha" placeholder="Escreva sua senha"></input>
+            <div class="detalhes__descricao">
+                <h2>Produto XYZ</h2>
+                <p class="detalhes__descricao__preco">R$ 60,00</p>
+                <p class="detalhes__descricao__descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis ad deserunt iure excepturi molestias at illo quae libero obcaecati architecto repellendus suscipit, magni voluptatum alias sapiente, corrupti incidunt blanditiis.
+                </p>
             </div>
-            <div class="contato__botao">
-                <button type="submit">Entrar</button>
+        </section>
+        <section class="produtos">
+            <div>
+                <div class="produtos__titulo">
+                    <h2>Produtos Similares</h2>
+                </div>
+                <div class="produtos__catalogo">
+                    <div class="produtos__catalogo_produtos">
+                        <img src="assets/star-wars-1.png">
+                        <h3>Produto XYZ</h3>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </div>
+                    <div class="produtos__catalogo_produtos">
+                        <img src="assets/star-wars-2.png">
+                        <h3>Produto XYZ</h3>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </div>
+                    <div class="produtos__catalogo_produtos">
+                        <img src="assets/star-wars-3.png">
+                        <h3>Produto XYZ</h3>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </div>
+                    <div class="produtos__catalogo_produtos">
+                        <img src="assets/star-wars-4.png">
+                        <h3>Produto XYZ</h3>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </div>
+                </div>
             </div>
-        </form>
+        </section>
     </main>
 
     <footer>

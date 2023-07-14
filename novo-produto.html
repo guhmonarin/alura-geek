@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/rodape.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/novo-produto.css">
     <title>AluraGeek</title>
 </head>
 <body>
@@ -17,34 +17,37 @@
         <nav class="cabecalho">
             <ul class="cabecalho__menu" >
                 <li><img src="assets/logo-mobile.png" alt="Logo da pagina"></li>
-                <li><a class="cabecalho__menu__botao" href="#">Login</a></li>
+                <li><a class="cabecalho__menu__botao" href="login.html">Menu Administrador</a></li>
                 <li><img src="assets/lupa.png"></li>
             </ul>
         </nav>
-        <div class="banner">
-            <img class="banner__mobile" src="">
-            <div class="banner__titulo">
-                <h2>Dezembro Promocional</h2>
-                <p>Produtos selecionados com 33% de desconto</p>
-                <button>Ver Consoles</button>
-            </div>
-        </div>
-
     </header>
 
-    <main>       
-        <form class="login">
-            <legend>Iniciar Sessão</legend>
-            <div class="login__email">
-                <label for="email"></label>
-                <input type="email" id="email" placeholder="Escreva seu e-mail"/>
+    <main>
+        <form class="adicionar__produto">
+            <legend>Adicionar novo produto</legend>
+            <div class="adicionar__produto__url">
+                <label for="url"></label>
+                <input type="text" id="url" placeholder="URL da imagem"/>
             </div>
-            <div class="login__senha">
-                <label for="senha"></label>
-                <input type="senha"  id="senha" placeholder="Escreva sua senha"></input>
+            <div class="adicionar__produto__categoria">
+                <label for="categoria"></label>
+                <input type="text" id="categoria" placeholder="categoria"/>
             </div>
-            <div class="contato__botao">
-                <button type="submit">Entrar</button>
+            <div class="adicionar__produto__nome">
+                <label for="nome"></label>
+                <input type="text" id="nome" placeholder="Nome do produto"/>
+            </div>
+            <div class="adicionar__produto__preco">
+                <label for="preco"></label>
+                <input type="text" id="preco" placeholder="Preço do produto"/>
+            </div>
+            <div>
+                <label for="descricao"></label>
+                <textarea id="descricao" placeholder="Descrição do produto"></textarea>
+            </div>
+            <div class="adicionar__produto__botao">
+                <button type="submit">Adicionar produto</button>
             </div>
         </form>
     </main>

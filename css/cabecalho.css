@@ -10,6 +10,10 @@
     justify-content: space-between;
 }
 
+.cabecalho__menu__busca {
+    display: none;
+}
+
 .cabecalho__menu__botao{
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
@@ -63,4 +67,25 @@
 
 .banner__titulo a:hover {
     background-color:#D4E4FA;
+}
+
+@media (min-width:700px) {
+    .cabecalho__menu__lupa {
+        display: none;
+    }
+
+    .cabecalho__menu__logo {
+        display: flex;
+        gap: 32px;
+    }
+
+    .cabecalho__menu__busca {
+        background-color: var(--cor-fundo);
+        display: block;
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: none;
+        width: 272px;
+    }
+
 }

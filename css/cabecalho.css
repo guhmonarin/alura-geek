@@ -51,12 +51,16 @@
     font-weight: 600;
 }
 
-.banner__titulo button {
+.banner__titulo a {
     color: var(--cor-principal);
     background-color: var(--cor-secundaria);
-    border: none;
-    width: 119px;
+    width: 90px;
     padding: 12px 16px;
     font-size: 14px;
     font-weight: 600;
+    text-decoration: none;
+}
+
+.banner__titulo a:hover {
+    background-color:#D4E4FA;
 }

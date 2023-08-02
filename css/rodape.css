@@ -61,3 +61,16 @@
     text-align: center;
     padding: 32px;
 }
+
+@media (min-width:800px) {
+    .contato {
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 64px;
+    }
+
+    .contato__formulario {
+        width: 50%;
+        max-width: 500px;
+    }
+}

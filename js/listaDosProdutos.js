@@ -1,7 +1,5 @@
-import { getBuscarProdutos, getBuscarProdutosPorId } from "./api"
-
 async function exibirProdutos() {
-    let listaDeProdutos = getBuscarProdutos()
+    let listaDeProdutos = await getBuscarProdutos()
     const elementoParaInserirProdutos = document.getElementById('produtos')
     elementoParaInserirProdutos.innerHTML = []
     listaDeProdutos.forEach(produtos => {
@@ -19,18 +17,15 @@ async function exibirProdutosPorId() {
     const descricao = document.querySelector('.detalhes__descricao')
     const urlParams = new URLSearchParams(window.location.search);
     const produtoId = urlParams.get('id');
-    let produto = getBuscarProdutosPorId(produtoId);
+    let produto = []
+    produto = await getBuscarProdutosPorId(produtoId);
+    console.log(produto)
     imagem.innerHTML = `
-    <img src = "${produto.img}">
+    <img src = "${produto.url}">
     `
     descricao.innerHTML = `
     <h2>${produto.nome}</h2>
-    <p class = "detalhes__descricao__preco">R$ ${produto.preco.toFixed(2)}</p>
+    <p class = "detalhes__descricao__preco">R$ ${produto.preco}</p>
     <p class = "detalhes__descricao__descricao">${produto.descricao}</p>
     `
 }
-
-module.exports = {
-    exibirProdutos,
-    exibirProdutosPorId
-};

@@ -10,8 +10,3 @@ async function getBuscarProdutosPorId(produtoId) {
     let produto = await res.json()
     return produto  
 }
-
-module.exports = {
-    getBuscarProdutos,
-    getBuscarProdutosPorId
-};

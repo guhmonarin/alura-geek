@@ -1,0 +1,37 @@
+{
+    "produtos": [
+        {
+            "id":1,
+            "url":"assets/star-wars-1.png",
+            "categoria":"Star wars",
+            "nome":"Produto XYZ",
+            "preco":60,
+            "descricao":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis ad deserunt iure excepturi molestias at illo quae libero obcaecati architecto repellendus suscipit, magni voluptatum alias sapiente, corrupti incidunt blanditiis."
+        },
+        {
+            "id":2,
+            "url":"assets/star-wars-1.png",
+            "categoria":"Star wars",
+            "nome":"Produto XYZ",
+            "preco":60,
+            "descricao":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis ad deserunt iure excepturi molestias at illo quae libero obcaecati architecto repellendus suscipit, magni voluptatum alias sapiente, corrupti incidunt blanditiis."
+        },
+        {
+            "id":3,
+            "url":"assets/star-wars-1.png",
+            "categoria":"Star wars",
+            "nome":"Produto XYZ",
+            "preco":60,
+            "descricao":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis ad deserunt iure excepturi molestias at illo quae libero obcaecati architecto repellendus suscipit, magni voluptatum alias sapiente, corrupti incidunt blanditiis."
+        },
+        {
+            "id":4,
+            "url":"assets/star-wars-1.png",
+            "categoria":"Star wars",
+            "nome":"Produto XYZ",
+            "preco":60,
+            "descricao":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis ad deserunt iure excepturi molestias at illo quae libero obcaecati architecto repellendus suscipit, magni voluptatum alias sapiente, corrupti incidunt blanditiis."
+        }
+
+    ]
+}

@@ -23,3 +23,10 @@ main {
     background-color: var(--cor-fundo);
     height: 100%;
 }
+
+@media (min-width: 1440px) {
+    main {
+        padding: 0 64px;
+    }
+    
+}

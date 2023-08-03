@@ -62,15 +62,40 @@
     padding: 32px;
 }
 
-@media (min-width:800px) {
+@media (min-width:768px) {
     .contato {
-        flex-direction: row-reverse;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: start;
         gap: 64px;
     }
 
     .contato__formulario {
-        width: 50%;
-        max-width: 500px;
+        width: 75%;
+        max-width: 768px;
     }
+    
+    .contato ul {
+        align-items: start;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contato {
+        padding: 16px 64px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contato__contato {
+        display: flex;
+        align-items: start;
+        gap: 140px;
+    }
+
+    .contato__formulario {
+        width: 50%;
+    }
+
+    
+
 }

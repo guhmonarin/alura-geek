@@ -87,7 +87,6 @@ async function exibirSeisProdutos() {
     let categoriaStarWars = 0
     let categoriaConsoles = 0
     let categoriaDiversos = 0
-    console.log(starsWars)
     listaDeProdutos.forEach(produto => {
         if (produto.categoria == "Star wars" && categoriaStarWars <= 6) {
             categoriaStarWars += 1

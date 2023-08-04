@@ -18,7 +18,8 @@ file.addEventListener("change", function() {
 
 adicionar.addEventListener('click', cadastrar)
 
-function cadastrar(e){
+async function cadastrar(e){
+    let ultimoId = await ultimoId()
     e.preventDefault();
     if (caminhoDaImagem === '') {
         alert("Por favor, seleciona uma imagem")
@@ -31,7 +32,7 @@ function cadastrar(e){
     } else if (descricao.value === '') {
         alert("Por favor, digite a descricao do produto")
     } else {
-        const ultimoId = ultimoId();
+        
         const novoProduto = {
             id: ultimoId + 1,
             url: caminhoDaImagem,

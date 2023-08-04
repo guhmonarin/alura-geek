@@ -13,6 +13,6 @@ async function getBuscarProdutosPorId(produtoId) {
 
 async function ultimoId() {
     listaDeProdutos = await getBuscarProdutos();
-    ultimoId = listaDeProdutos.length;
+    let ultimoId = listaDeProdutos.length;
     return ultimoId
 }

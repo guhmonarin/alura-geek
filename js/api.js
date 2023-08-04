@@ -10,3 +10,9 @@ async function getBuscarProdutosPorId(produtoId) {
     let produto = await res.json()
     return produto  
 }
+
+async function ultimoId() {
+    listaDeProdutos = await getBuscarProdutos();
+    ultimoId = listaDeProdutos.length;
+    return ultimoId
+}

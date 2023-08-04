@@ -32,26 +32,26 @@
             <legend>Adicionar novo produto</legend>
             <div class="adicionar__produto__url">
                 <label for="url"></label>
-                <input type="text" id="url" placeholder="URL da imagem"/>
+                <input type="file" id="url"/>
             </div>
             <div class="adicionar__produto__categoria">
                 <label for="categoria"></label>
-                <input type="text" id="categoria" placeholder="categoria"/>
+                <input type="text" id="categoria" placeholder="Categoria"/>
             </div>
             <div class="adicionar__produto__nome">
                 <label for="nome"></label>
-                <input type="text" id="nome" placeholder="Nome do produto"/>
+                <input type="text" id="nome" placeholder="Nome do produto" maxlength="20" minlength="1"/>
             </div>
             <div class="adicionar__produto__preco">
                 <label for="preco"></label>
-                <input type="text" id="preco" placeholder="Preço do produto"/>
+                <input type="number" id="preco" placeholder="Preço do produto" />
             </div>
             <div>
                 <label for="descricao"></label>
-                <textarea id="descricao" placeholder="Descrição do produto"></textarea>
+                <textarea id="descricao" placeholder="Descrição do produto" maxlength="150"></textarea>
             </div>
             <div class="adicionar__produto__botao">
-                <button type="submit">Adicionar produto</button>
+                <button type="submit" id="adicionar">Adicionar produto</button>
             </div>
         </form>
     </main>
@@ -91,6 +91,7 @@
             <p>Desenvolvido por Gustavo Monarin - 2023</p>
         </div>
     </footer>
-    
+    <script src="js/api.js"></script>
+    <script src="js/cadastrarProduto.js"></script>
 </body>
 </html>

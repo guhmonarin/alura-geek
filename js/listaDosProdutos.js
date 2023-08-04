@@ -68,7 +68,11 @@ async function exibirQuatroProdutos() {
             <div class="produtos__catalogo_produtos">
                 <img src=${produto.url}>
                 <h3>${produto.nome}</h3>
+<<<<<<< HEAD
                 <p>R$ ${produtospreco.toFixed(2)}</p>
+=======
+                <p>R$ ${produto.preco.toFixed(2)}</p>
+>>>>>>> 41b035efdec227a9332ae7914f94377b8cad9f7b
                 <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
@@ -89,7 +93,7 @@ async function exibirSeisProdutos() {
     let categoriaDiversos = 0
     listaDeProdutos.forEach(produto => {
         if (produto.categoria == "Star wars" && categoriaStarWars <= 6) {
-            categoraStarWars += 1
+            categoriaStarWars += 1
             starsWars.innerHTML += `
             <div class="produtos__catalogo_produtos">
                 <img src=${produto.url}>

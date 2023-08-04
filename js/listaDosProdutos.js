@@ -42,7 +42,7 @@ async function exibirQuatroProdutos() {
     let categoriaConsoles = 0
     let categoriaDiversos = 0
     listaDeProdutos.forEach(produto => {
-        if (produto.categoria == "Star wars" && categoriaStarWars <= 4) {
+        if (produto.categoria == "Star wars" && categoriaStarWars < 4) {
             categoriaStarWars += 1
             starsWars.innerHTML += `
             <div class="produtos__catalogo_produtos">
@@ -52,7 +52,7 @@ async function exibirQuatroProdutos() {
                 <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
-        } else if (produto.categoria == "Consoles" && categoriaConsoles <= 4) {
+        } else if (produto.categoria == "Consoles" && categoriaConsoles < 4) {
             categoriaConsoles += 1
             consoles.innerHTML += `
             <div class="produtos__catalogo_produtos">
@@ -62,17 +62,13 @@ async function exibirQuatroProdutos() {
                 <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
-        } else if (produto.categoria !== "Star wars" && produto.categoria !== "Consoles" && categoriaDiversos <= 4){
+        } else if (produto.categoria !== "Star wars" && produto.categoria !== "Consoles" && categoriaDiversos < 4){
             categoriaDiversos += 1
             diversos.innerHTML += `
             <div class="produtos__catalogo_produtos">
                 <img src=${produto.url}>
                 <h3>${produto.nome}</h3>
-<<<<<<< HEAD
-                <p>R$ ${produtospreco.toFixed(2)}</p>
-=======
                 <p>R$ ${produto.preco.toFixed(2)}</p>
->>>>>>> 41b035efdec227a9332ae7914f94377b8cad9f7b
                 <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
@@ -92,7 +88,7 @@ async function exibirSeisProdutos() {
     let categoriaConsoles = 0
     let categoriaDiversos = 0
     listaDeProdutos.forEach(produto => {
-        if (produto.categoria == "Star wars" && categoriaStarWars <= 6) {
+        if (produto.categoria == "Star wars" && categoriaStarWars < 6) {
             categoriaStarWars += 1
             starsWars.innerHTML += `
             <div class="produtos__catalogo_produtos">
@@ -102,7 +98,7 @@ async function exibirSeisProdutos() {
                 <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
-        } else if (produto.categoria == "Consoles" && categoriaConsoles <= 6) {
+        } else if (produto.categoria == "Consoles" && categoriaConsoles < 6) {
             categoriaConsoles += 1
             consoles.innerHTML += `
             <div class="produtos__catalogo_produtos">
@@ -112,7 +108,7 @@ async function exibirSeisProdutos() {
                 <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
-        } else if (produto.categoria !== "Star wars" && produto.categoria !== "Consoles" && categoriaDiversos <= 6){
+        } else if (produto.categoria !== "Star wars" && produto.categoria !== "Consoles" && categoriaDiversos < 6){
             categoriaDiversos += 1
             diversos.innerHTML += `
             <div class="produtos__catalogo_produtos">

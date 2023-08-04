@@ -16,11 +16,14 @@ file.addEventListener("change", function() {
   });
     
 
-adicionar.addEventListener('click', cadastrar)
+adicionar.addEventListener('click', function(e){
+    cadastrar(e);
+})
 
-async function cadastrar(e){
-    let ultimoId = await ultimoId()
+function cadastrar(e){
+    
     e.preventDefault();
+
     if (caminhoDaImagem === '') {
         alert("Por favor, seleciona uma imagem")
     } else if (categoria.value === ''){
@@ -34,14 +37,15 @@ async function cadastrar(e){
     } else {
         
         const novoProduto = {
-            id: ultimoId + 1,
+            id: 5,
             url: caminhoDaImagem,
             categoria: categoria.value,
             nome: nome.value,
             preco: parseFloat(preco.value), // Converte o preço para número (caso o usuário insira um valor decimal)
             descricao: descricao.value
           };
-        
+        console.log("Enviando o produto:", novoProduto);
+
         fetch("https://my-json-server.typicode.com/guhmonarin/demo-api/produtos", {
             method: 'POST',
             headers: {
@@ -54,7 +58,7 @@ async function cadastrar(e){
             console.log('Produto cadastrado com sucesso', data)
         })
         .catch(error => {
-            console.error("Erro ao cadastrar o produto:", error)
+            console.error(error)
         })
     }
 }

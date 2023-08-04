@@ -41,7 +41,7 @@ function cadastrar(e){
             descricao: descricao.value
           };
         
-        fetch("http://localhost:3000/produtos", {
+        fetch("https://my-json-server.typicode.com/guhmonarin/demo-api/produtos", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

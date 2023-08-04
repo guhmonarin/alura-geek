@@ -43,13 +43,13 @@ async function exibirQuatroProdutos() {
     let categoriaDiversos = 0
     listaDeProdutos.forEach(produto => {
         if (produto.categoria == "Star wars" && categoriaStarWars <= 4) {
-            categoraStarWars += 1
+            categoriaStarWars += 1
             starsWars.innerHTML += `
             <div class="produtos__catalogo_produtos">
                 <img src=${produto.url}>
                 <h3>${produto.nome}</h3>
-                <p>R$ ${produtos.preco.toFixed(2)}</p>
-                <a href="descricao.html?id=${produtos.id}">Ver produto</a>
+                <p>R$ ${produto.preco.toFixed(2)}</p>
+                <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
         } else if (produto.categoria == "Consoles" && categoriaConsoles <= 4) {
@@ -58,8 +58,8 @@ async function exibirQuatroProdutos() {
             <div class="produtos__catalogo_produtos">
                 <img src=${produto.url}>
                 <h3>${produto.nome}</h3>
-                <p>R$ ${produtos.preco.toFixed(2)}</p>
-                <a href="descricao.html?id=${produtos.id}">Ver produto</a>
+                <p>R$ ${produto.preco.toFixed(2)}</p>
+                <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
         } else if (produto.categoria !== "Star wars" && produto.categoria !== "Consoles" && categoriaDiversos <= 4){
@@ -68,8 +68,8 @@ async function exibirQuatroProdutos() {
             <div class="produtos__catalogo_produtos">
                 <img src=${produto.url}>
                 <h3>${produto.nome}</h3>
-                <p>R$ ${produtos.preco.toFixed(2)}</p>
-                <a href="descricao.html?id=${produtos.id}">Ver produto</a>
+                <p>R$ ${produtospreco.toFixed(2)}</p>
+                <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
         }
@@ -94,8 +94,8 @@ async function exibirSeisProdutos() {
             <div class="produtos__catalogo_produtos">
                 <img src=${produto.url}>
                 <h3>${produto.nome}</h3>
-                <p>R$ ${produtos.preco.toFixed(2)}</p>
-                <a href="descricao.html?id=${produtos.id}">Ver produto</a>
+                <p>R$ ${produto.preco.toFixed(2)}</p>
+                <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
         } else if (produto.categoria == "Consoles" && categoriaConsoles <= 6) {
@@ -104,8 +104,8 @@ async function exibirSeisProdutos() {
             <div class="produtos__catalogo_produtos">
                 <img src=${produto.url}>
                 <h3>${produto.nome}</h3>
-                <p>R$ ${produtos.preco.toFixed(2)}</p>
-                <a href="descricao.html?id=${produtos.id}">Ver produto</a>
+                <p>R$ ${produto.preco.toFixed(2)}</p>
+                <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
         } else if (produto.categoria !== "Star wars" && produto.categoria !== "Consoles" && categoriaDiversos <= 6){
@@ -114,8 +114,8 @@ async function exibirSeisProdutos() {
             <div class="produtos__catalogo_produtos">
                 <img src=${produto.url}>
                 <h3>${produto.nome}</h3>
-                <p>R$ ${produtos.preco.toFixed(2)}</p>
-                <a href="descricao.html?id=${produtos.id}">Ver produto</a>
+                <p>R$ ${produto.preco.toFixed(2)}</p>
+                <a href="descricao.html?id=${produto.id}">Ver produto</a>
             </div>
             `
         }
